@@ -1,29 +1,29 @@
 # -Card-Detection-System-Aadhaar-PAN-Card-
 Overview
 
-The Identity Card Detection System is an Android application that utilizes Optical Character Recognition (OCR) to detect and extract text from identity cards. Originally developed as a JavaScript-based web application, this system has been successfully converted into an Android app using Android Studio.
+The Identity Card Detection System is a web-based application built using HTML, CSS, and JavaScript. It allows users to detect identity cards, extract relevant details using Optical Character Recognition (OCR), and validate the card number.
 
 Features
 
-Real-time identity card detection using the device camera
+Start Detection Button to initiate scanning
 
-OCR-based text extraction from ID cards
+Camera access request for capturing ID cards
 
-Automatic cropping and preprocessing for better accuracy
+Automatic image capture and text extraction
+
+Validation of card number to check authenticity
 
 User-friendly interface with simple navigation
 
+No backend required (runs entirely on the client-side)
+
 Technologies Used
 
-Android Studio for application development
+HTML, CSS, JavaScript for frontend development
 
-Java/Kotlin as the programming language
+Tesseract.js for OCR-based text extraction
 
-Tesseract OCR or Google ML Kit for text extraction
-
-OpenCV (optional) for image preprocessing
-
-XML for UI design
+Canvas API for image processing 
 
 Installation
 
@@ -31,23 +31,23 @@ Clone this repository:
 
 git clone https://github.com/your-username/identity-card-detection.git
 
-Open the project in Android Studio.
+Open the project folder.
 
-Sync dependencies in build.gradle.
-
-Connect an Android device or use an emulator.
-
-Run the application.
+Open index.html in any modern web browser.
 
 Usage
 
-Open the app and grant necessary camera permissions.
+Open the app in a web browser.
 
-Point the camera towards an identity card.
+Click on the Start Detection button.
 
-The app will detect the card and extract the text.
+Grant camera permissions when prompted.
 
-Review and save the extracted details.
+Hold an identity card in front of the camera.
+
+The system captures the image, extracts the ID number, and verifies its validity.
+
+The result is displayed to indicate whether the ID number is valid or not.
 
 Future Improvements
 
@@ -58,4 +58,3 @@ Multi-language OCR support.
 Better UI/UX enhancements.
 
 Enhanced AI-based detection for improved accuracy.
-
